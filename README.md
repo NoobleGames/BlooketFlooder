@@ -18,8 +18,8 @@ A web-based tool that floods a Blooket game with bots using a specified game pin
 
 ### Hosting on Glitch or Replit
 1. **Fork or Remix the Project**:
-   - On [Glitch](https://glitch.com/): Click "Remix" to create your version of the app.
-   - On [Replit](https://replit.com/): Fork the project to your account.
+   - On [Glitch](https://glitch.com/edit/#!/blooketflooder): Click "Remix" to create your version of the app.
+   - On [Replit](https://replit.com/@chill2030/BlooketFlooder?v=1): Fork the project to your account.
 
 2. **Install Dependencies**:
    - Make sure to install all required Node.js packages. This project relies on:
