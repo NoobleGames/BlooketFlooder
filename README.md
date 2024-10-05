@@ -30,3 +30,4 @@ A web-based tool that floods a Blooket game with bots using a specified game pin
    Run:
    ```bash
    npm install
+![Fun GIF](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjhmMWxkYzJkdDM5eXR4OXdkOWpkbnRtajhrcW91bHJ6dW5sdmRxYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/gii0Lant3XF3V9ony6/giphy.webp)
