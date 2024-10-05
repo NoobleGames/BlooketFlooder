@@ -1,3 +1,4 @@
+![Fun GIF](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmw5NWM4cGppNWx6Y2Vzb21uZmRoNHA1YjNiMjhxdjd5bWJtNzZmMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/WIhTOyUlNHyUDIFDmQ/giphy.webp)
 # Blooket Flooder
 
 A web-based tool that floods a Blooket game with bots using a specified game pin. The project is designed to be easily hosted on platforms like [Glitch](https://glitch.com/) or [Replit](https://replit.com/).
@@ -11,7 +12,7 @@ A web-based tool that floods a Blooket game with bots using a specified game pin
 ## How It Works
 1. Enter the **Blooket Game Pin** for the game you want to join.
 2. Specify a **bot name** and the **number of bots** to create.
-3. The bots will join the game sequentially with unique names (e.g., Bot1, Bot2, etc.). ![Fun GIF](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnVndnAyNDdrejRrNHdubHBkdHJod3FjZGxpMGphOTZ1b3EyOTA5YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/SpT07l7ntQi09sLD8H/giphy.webp)
+3. The bots will join the game sequentially with unique names (e.g., Bot1, Bot2, etc.).
 4. Notifications will indicate success or any errors encountered during bot creation.
 
 ## Setup Instructions
