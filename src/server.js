@@ -11,39 +11,56 @@ const PORT = process.env.PORT || 3000;
 
 app.use(cors());
 app.use(express.json());
+app.use(express.static('public')); // Serve static files
 
 app.get('/', (req, res) => {
-    res.send(`
+    res.send(generateHTML());
+});
+
+// Generate HTML content
+const generateHTML = () => {
+    return `
     <!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Blooket Bot Creator</title>
+        <title>Blooket Flooder</title>
+        <link rel="icon" href="/src/blooket.png" type="image/x-icon">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
         <style>
+            * {
+                box-sizing: border-box;
+            }
             body {
                 font-family: 'Poppins', sans-serif;
-                background-color: #e9f1f7;
+                background: linear-gradient(135deg, #e9f1f7, #f3f4f6);
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 height: 100vh;
                 margin: 0;
+                padding: 20px;
+                overflow: hidden;
             }
             .container {
                 background: #ffffff;
                 padding: 40px;
                 border-radius: 15px;
-                box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+                box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
                 width: 100%;
                 max-width: 420px;
                 text-align: center;
+                animation: fadeIn 0.5s ease;
+            }
+            @keyframes fadeIn {
+                from { opacity: 0; }
+                to { opacity: 1; }
             }
             h1 {
                 color: #2c3e50;
                 margin-bottom: 30px;
-                font-size: 2.2em;
+                font-size: 2.5em;
                 font-weight: 700;
             }
             form {
@@ -124,12 +141,24 @@ app.get('/', (req, res) => {
                 color: #95a5a6;
                 margin-top: 15px;
                 text-align: center;
+                transition: color 0.3s ease;
+            }
+            footer:hover {
+                color: #34495e;
+            }
+            @media (max-width: 500px) {
+                h1 {
+                    font-size: 2em;
+                }
+                button {
+                    font-size: 1rem;
+                }
             }
         </style>
     </head>
     <body>
         <div class="container">
-            <h1>Create Blooket Bots</h1>
+            <h1>Blooket Flooder</h1>
             <form id="bot-form">
                 <label for="gamePin">Game Pin:</label>
                 <input type="text" id="gamePin" name="gamePin" required placeholder="Enter Game Pin">
@@ -157,13 +186,8 @@ app.get('/', (req, res) => {
             const randomNamesCheckbox = document.getElementById('randomNames');
 
             randomNamesCheckbox.addEventListener('change', () => {
-                if (randomNamesCheckbox.checked) {
-                    botNameInput.value = 'Random';
-                    botNameInput.disabled = true;
-                } else {
-                    botNameInput.value = '';
-                    botNameInput.disabled = false;
-                }
+                botNameInput.value = randomNamesCheckbox.checked ? 'Random' : '';
+                botNameInput.disabled = randomNamesCheckbox.checked;
             });
 
             document.getElementById('bot-form').addEventListener('submit', async (e) => {
@@ -217,14 +241,12 @@ app.get('/', (req, res) => {
         </script>
     </body>
     </html>
-    `);
-});
-
+    `;
+};
 
 const generateRandomName = () => {
     return Math.random().toString(36).substring(2, 10); 
 };
-
 
 app.post('/create-bots', async (req, res) => {
     const { gamePin, botName, amount, randomNames } = req.body;
@@ -239,9 +261,10 @@ app.post('/create-bots', async (req, res) => {
         });
 
         const url = response.data.n;
-        let botResponses = [];
+        const botResponses = [];
+
         for (let i = 1; i <= amount; i++) {
-            const botFinalName = randomNames ? generateRandomName() : botName + i;
+            const botFinalName = randomNames ? generateRandomName() : `${botName}${i}`;
             const botResponse = await join(gamePin, botFinalName);
             botResponses.push(botResponse);
         }
