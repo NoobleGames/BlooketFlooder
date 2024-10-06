@@ -17,9 +17,9 @@ A web-based tool that floods a Blooket game with bots using a specified game pin
 
 ## Setup Instructions
 
-### Hosting on Glitch or Replit
-1. **Fork or Remix the Project**:
-   - On [Glitch](https://glitch.com/edit/#!/blooketflooder): Click "Remix" to create your version of the app.
+### Hosting Platforms
+   -  [Glitch](https://glitch.com/edit/#!/blooketflooder): Click "Remix" to create your version of the app.
+[Glitch Banner](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDb4LmQj0Q4STVvM3oRj4Wd5M8vNqL-14fWg&s)
    - On [Replit](https://replit.com/@chill2030/BlooketFlooder?v=1): Fork the project to your account.
 
 2. **Install Dependencies**:
