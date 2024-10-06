@@ -19,7 +19,7 @@ A web-based tool that floods a Blooket game with bots using a specified game pin
 ### Deploy
 [![Run on Replit](https://binbashbanana.github.io/deploy-buttons/buttons/remade/replit.svg)](https://replit.com/@chill2030/BlooketFlooder?v=1)
 [![Remix on Glitch](https://binbashbanana.github.io/deploy-buttons/buttons/remade/glitch.svg)](https://glitch.com/edit/#!/blooketflooder)
-
+[![Run on Render](https://binbashbanana.github.io/deploy-buttons/buttons/remade/render.svg)](https://render.com/deploy?repo=https://github.com/NoobleGames/BlooketFlooder)
 
 2. **Install Dependencies**:
    - Make sure to install all required Node.js packages. This project relies on:
