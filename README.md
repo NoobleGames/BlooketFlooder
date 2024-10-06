@@ -15,16 +15,11 @@ A web-based tool that floods a Blooket game with bots using a specified game pin
 3. The bots will join the game sequentially with unique names (e.g., Bot1, Bot2, etc.).
 4. Notifications will indicate success or any errors encountered during bot creation.
 
-## Setup Instructions
 
-### Hosting Platforms
-   -  [Glitch](https://glitch.com/edit/#!/blooketflooder): Click "Remix" to create your version of the app.
+### Deploy
+[![Run on Replit](https://binbashbanana.github.io/deploy-buttons/buttons/remade/replit.svg)](https://replit.com/@chill2030/BlooketFlooder?v=1)
+[![Remix on Glitch](https://binbashbanana.github.io/deploy-buttons/buttons/remade/glitch.svg)](https://glitch.com/edit/#!/blooketflooder)
 
-![Glitch Banner](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDb4LmQj0Q4STVvM3oRj4Wd5M8vNqL-14fWg&s)
-   
-- On [Replit](https://replit.com/@chill2030/BlooketFlooder?v=1): Fork the project to your account.
-
-![Replit Banner](https://cdn.icon-icons.com/icons2/2699/PNG/512/replit_logo_icon_168861.png)
 
 2. **Install Dependencies**:
    - Make sure to install all required Node.js packages. This project relies on:
