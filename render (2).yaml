@@ -1,0 +1,11 @@
+# Exported from Render on 2024-10-06T02:15:20Z
+services:
+- type: web
+  name: BlooketFlooder-pov3
+  runtime: node
+  repo: https://github.com/BlooketFlooder0/BlooketFlooder
+  plan: free
+  region: oregon
+  buildCommand: 'yarn add express cors axios firebase chalk '
+  startCommand: node src/server.js
+version: "1"
