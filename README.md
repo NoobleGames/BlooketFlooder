@@ -24,7 +24,7 @@ A web-based tool that floods a Blooket game with bots using a specified game pin
    
 - On [Replit](https://replit.com/@chill2030/BlooketFlooder?v=1): Fork the project to your account.
 
-![Replit Banner](https://dzh2zima160vx.cloudfront.net/logo/b5311b5dca19c2096d13635b69aa7a17_240_160?Expires=1861920000&Signature=M4eGrD9NrVZz-plSlGiLawqwD7jXobhCGCT--BcavKc18I-DCQaggYohtHoBpbbl71lKsOn4QCHVbY5WzawiIZElkagB66s7kdsVqgPJ806EgBukWpPSiOYPSFJTSsVJ1mDKvvtB5zVYyL1aXqrEapL3GMaSBcbA43gT6CEBq2YaK7LMIjQppa-ojYsgjxYHRvoLCpLfoTAcLly53faciGFGpL65kumD8g-tQal8W0sn~rwAEFieLG~T6ProGPMUz03T9TVa1xOtET7rVs3GgJ3K5HcLARaD0Di~6ONwT2woeOkOgqVUyoyoKAZriGz26aXSrdfOi6xfWzZNejSS6w__&Key-Pair-Id=APKAII5OVX4LZ3WT422Q)
+![Replit Banner](https://cdn.icon-icons.com/icons2/2699/PNG/512/replit_logo_icon_168861.png)
 
 2. **Install Dependencies**:
    - Make sure to install all required Node.js packages. This project relies on:
